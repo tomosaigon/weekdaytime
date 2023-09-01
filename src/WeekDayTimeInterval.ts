@@ -29,7 +29,7 @@ class WeekDayTimeInterval {
   toTimeString(): string {
     return `${this.a.toTimeString()}-${this.z.toTimeString()}`;
   }
-  
+
   /**
    * Parses a CSV string containing time intervals and creates an array of WeekDayTimeInterval instances.
    *
@@ -37,7 +37,7 @@ class WeekDayTimeInterval {
    * @returns {WeekDayTimeInterval[]} An array of WeekDayTimeInterval instances.
    * @throws {Error} Throws an error if the input format is invalid.
    */
-  static fromCSV(csvStr: string, dd: number = 0): WeekDayTimeInterval[] {
+  static fromCSV(csvStr: string, dd = 0): WeekDayTimeInterval[] {
     const intervals: WeekDayTimeInterval[] = [];
 
     const intervalPairs = csvStr.split(',').map((intervalStr) => intervalStr.split('-'));

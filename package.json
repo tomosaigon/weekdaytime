@@ -21,7 +21,7 @@
     "url": "git+https://github.com/tomosaigon/weekdaytime.git"
   },
   "keywords": [
-    "boilerplate",
+    "week", "weekday", "time", "interval", "schedule", "calendar", "recurring", 
     "typescript"
   ],
   "author": "Tomo Saigon",

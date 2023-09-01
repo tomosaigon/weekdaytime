@@ -10,9 +10,9 @@ describe('WeekDayTime', () => {
   });
 
   it('should throw an error for invalid input values', () => {
-    expect(() => new WeekDayTime(-1, 12, 30)).toThrowError('Invalid day/time numbers');
-    expect(() => new WeekDayTime(0, 24, 30)).toThrowError('Invalid day/time numbers');
-    expect(() => new WeekDayTime(0, 12, 60)).toThrowError('Invalid day/time numbers');
+    expect(() => new WeekDayTime(-1, 12, 30)).toThrow('Invalid day/time numbers');
+    expect(() => new WeekDayTime(0, 24, 30)).toThrow('Invalid day/time numbers');
+    expect(() => new WeekDayTime(0, 12, 60)).toThrow('Invalid day/time numbers');
   });
 
   // Test fromString
@@ -43,7 +43,7 @@ describe('WeekDayTime', () => {
   });
 
   it('should throw an error for an invalid time string', () => {
-    expect(() => WeekDayTime.fromString('invalid15:45')).toThrowError('Invalid time string');
+    expect(() => WeekDayTime.fromString('invalid15:45')).toThrow('Invalid time string');
   });
 
   // Test toString

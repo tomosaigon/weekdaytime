@@ -45,7 +45,7 @@ class WeekDayTime {
    * @returns {WeekDayTime} A new WeekDayTime instance.
    * @throws {Error} Throws an error if the time format is invalid.
    */
-  static fromTimeString(timeStr: string, dd: number = 0): WeekDayTime {
+  static fromTimeString(timeStr: string, dd = 0): WeekDayTime {
     return WeekDayTime.fromString('' + dd + 'd' + timeStr);
   }
 
