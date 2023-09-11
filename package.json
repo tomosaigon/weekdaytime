@@ -1,7 +1,7 @@
 {
   "name": "weekdaytime",
-  "version": "0.0.2",
-  "description": "Represent a repeating set of time intervals (00:00-23:59) during the week",
+  "version": "0.0.3",
+  "description": "Represent a repeating set of time intervals (00:00-23:59) during the week from a JSON string containing days of the week and corresponding time intervals separated by commas. Transform this input into a structured array representing weekday times in a normalized format. Then enable addition and comparison of time intervals and check overlapping periods.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
